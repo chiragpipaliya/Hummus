@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+    
+     <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_header_main">
+        
+        <TextView 
+            android:id="@+id/tv_maintitle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="Search"
+               android:layout_weight="1"
+            android:textColor="@color/yellow"
+            android:textSize="@dimen/txt6"
+            android:textStyle="bold"/>
+        
+        <LinearLayout 
+            android:id="@+id/l1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:orientation="horizontal"
+            android:layout_centerVertical="true">
+            
+              <ImageView 
+                  android:id="@+id/backimage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_header_back"
+                android:layout_marginLeft="@dimen/txt"
+                android:layout_gravity="center"/>
+              
+              <TextView 
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="Back"
+              		
+              	android:layout_margin="3dp"
+              	android:gravity="center"
+                  android:textSize="@dimen/txt7"
+                  android:textColor="@color/yellow"/>
+            
+            </LinearLayout>
+
+   
+
+    </RelativeLayout>
+    
+     <LinearLayout 
+         android:id="@+id/lserch"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+        >		
+    
+          <SearchView
+            android:id="@+id/searchView1"
+            android:background="@drawable/border"
+            android:layout_width="fill_parent"
+            android:padding="2dp"
+            android:queryHint="Search.."
+            android:layout_height="wrap_content" >
+        </SearchView>
+    </LinearLayout>
+    
+      <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <com.google.android.gms.ads.AdView
+            xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/adView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            ads:adSize="SMART_BANNER"
+            ads:adUnitId="ca-app-pub-9264938368122005/9861881773" />
+
+        <ListView
+            android:id="@+id/slist"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/adView" >
+        </ListView>
+    </RelativeLayout>
+
+
+    </LinearLayout>

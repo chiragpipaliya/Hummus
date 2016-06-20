@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" 
+   >
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        
+        <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/main"
+            >
+            
+            <TextView 
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingTop="@dimen/txt3"
+                android:paddingBottom="@dimen/txt3"
+                android:text="Rating"
+                android:textStyle="bold"
+                android:textColor="@color/yellow"
+                android:textSize="@dimen/txt6"
+                />
+        </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_row_rate"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/txt2"
+        android:background="@color/white"
+        android:gravity="center"
+         android:paddingLeft="@dimen/txt7"
+    android:paddingRight="@dimen/txt7"
+        android:orientation="horizontal" >
+
+        <RatingBar
+            android:id="@+id/rb_rating1"
+            style="?android:attr/ratingBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/txt5"
+            android:paddingBottom="@dimen/txt5"
+            android:clickable="true"
+            android:progressDrawable="@drawable/cust_ratingbar"
+            android:transformPivotX="0dp"
+            android:translationY="0dp" />
+    </LinearLayout>
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        >
+        <Button 
+            android:id="@+id/b_rate_submit"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="Submit"
+            android:textSize="@dimen/txt7"
+            android:background="@drawable/shape"
+            android:layout_weight="1"
+            android:padding="@dimen/txt2"
+			android:textStyle="bold"
+            android:layout_marginLeft="@dimen/txt4"
+            android:layout_marginRight="@dimen/txt4"
+            android:layout_marginBottom="@dimen/txt2"
+            android:textColor="@color/yellow"
+            />
+        
+         <Button 
+             android:id="@+id/b_rate_cancel"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="Cancel"
+            android:textStyle="bold"
+            android:textSize="@dimen/txt7"
+            android:layout_marginLeft="@dimen/txt4"
+            android:layout_marginRight="@dimen/txt4"
+            android:padding="@dimen/txt2"
+            android:layout_weight="1"
+            android:layout_marginBottom="@dimen/txt2"
+            android:background="@drawable/shape"
+            android:textColor="@color/yellow"/>
+    </LinearLayout>
+</LinearLayout>
+</LinearLayout>

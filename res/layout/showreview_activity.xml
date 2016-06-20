@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.mikhaellopez.circularimageviewsample"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/header" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center" >
+
+                <com.github.siyamed.shapeimageview.CircularImageView
+                    android:id="@+id/list_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/txt2"
+                    android:src="@drawable/ic_launcher" >
+                </com.github.siyamed.shapeimageview.CircularImageView>
+
+                <TextView
+                    android:id="@+id/eventname"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/list_icon"
+                    android:gravity="center"
+                    android:layout_marginTop="@dimen/txt2"
+                    android:text="dnwdnjisdnjksndsjkdnjksdnjksdn"
+                    android:textColor="@color/main"
+                    android:textSize="@dimen/txt5"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+           
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/txt2"
+                android:background="@color/main" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:background="@color/bcolor" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_weight="1"
+                android:background="@color/bcolor"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/ll_review"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/tv_noreview"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="No review found..."
+                        android:textColor="@color/main"
+                        android:textSize="@dimen/txt5"
+                        android:textStyle="bold"
+                        android:visibility="gone" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

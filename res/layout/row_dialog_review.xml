@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+    
+    <TextView 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/txt5"
+        android:paddingRight="@dimen/txt5"
+        android:text="Review Send"
+        android:textSize="@dimen/txt6"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:layout_margin="@dimen/txt4"/>
+    
+    <TextView 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/txt5"
+        android:paddingRight="@dimen/txt5"
+        android:text="Successfully"
+        android:textSize="@dimen/txt4"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:layout_margin="@dimen/txt4"/>
+    <Button 
+        android:id="@+id/bb_upload"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="OK"
+        android:textSize="@dimen/txt2"/>
+    
+    
+    
+
+</LinearLayout>

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+
+   
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_header_main"
+        android:orientation="vertical">
+        
+        <TextView 
+            android:id="@+id/tv_maintitle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="Hummus+"
+               android:layout_weight="1"
+            android:textColor="@color/yellow"
+            android:textSize="@dimen/txt6"
+            android:textStyle="bold"/>
+    </LinearLayout>
+    
+        
+    <ScrollView 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        
+        <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/txt"
+        android:gravity="center"
+        android:orientation="horizontal">
+        
+        <ImageView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_home_logo"/>
+    </LinearLayout>
+    
+  
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/listbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+              android:layout_marginTop="@dimen/txt"
+            android:background="@drawable/btn_home_genereal"
+            android:drawableLeft="@drawable/ic_home_list"
+            	android:paddingRight="@dimen/txt3"
+            android:text="The List"
+            android:textColor="@color/yellow"
+            android:textSize="@dimen/txt6"
+            android:textStyle="bold"
+            android:gravity="center" />
+        
+        <Button 
+            android:id="@+id/searchbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+              android:layout_marginTop="@dimen/txt"
+            android:background="@drawable/btn_home_genereal"
+            android:drawableLeft="@drawable/ic_home_search"
+            android:text="Search"
+            android:textSize="@dimen/txt6"
+            android:textStyle="bold"
+            android:textColor="@color/yellow"
+            android:gravity="center"/>
+        
+        <Button 
+            android:id="@+id/mapbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+              android:layout_marginTop="@dimen/txt"
+            android:background="@drawable/btn_home_genereal"
+            android:drawableLeft="@drawable/ic_home_map"
+            android:text="Map"
+            android:textSize="@dimen/txt6"
+            android:textStyle="bold"
+            android:textColor="@color/yellow"
+            android:gravity="center"/>
+        
+            <Button 
+            android:id="@+id/add_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+              android:layout_marginTop="@dimen/txt"
+            android:background="@drawable/btn_home_genereal"
+            android:drawableLeft="@drawable/ic_home_add_restaurant"
+            android:text="Add Restaurant"
+            android:textSize="@dimen/txt6"
+            android:textStyle="bold"
+            android:textColor="@color/yellow"
+            android:gravity="center"/>
+        
+        
+        <Button 
+            android:id="@+id/aboutbutton"
+            android:layout_width="wrap_content"
+              android:layout_marginTop="@dimen/txt"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_home_genereal"
+            android:drawableLeft="@drawable/ic_home_about_us"
+            android:text="About"
+            android:textSize="@dimen/txt6"
+            android:textStyle="bold"
+            android:textColor="@color/yellow"
+            android:gravity="center"/>
+        
+        
+        <Button 
+            android:id="@+id/sharebutton"
+            android:layout_width="wrap_content"
+              android:layout_marginTop="@dimen/txt"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_home_genereal"
+            android:drawableLeft="@drawable/ic_home_share"
+            android:text="Share App"
+            android:textSize="@dimen/txt6"
+            	android:paddingRight="@dimen/txt3"
+            android:textStyle="bold"
+            android:textColor="@color/yellow"/>
+        
+        <Button
+            android:id="@+id/ratebutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/txt"
+            android:layout_marginTop="@dimen/txt"
+            android:background="@drawable/btn_home_genereal"
+            android:drawableLeft="@drawable/ic_home_rate_us"
+            android:paddingRight="@dimen/txt3"
+            android:text="Rate Us"
+            android:textColor="@color/yellow"
+            android:textSize="@dimen/txt6"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+   </LinearLayout>
+   </ScrollView>
+</LinearLayout>
+   
+
+    
+            
+       
+
+    
