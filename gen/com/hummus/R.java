@@ -1185,7 +1185,7 @@ containing a value of this type.
         /**  Brand name for Google [DO NOT TRANSLATE] 
          */
         public static final int auth_google_play_services_client_google_display_name=0x7f060006;
-        public static final int btn_text=0x7f060040;
+        public static final int btn_text=0x7f06003f;
         /**  Message of the notification to indicate an active cast display connection.  [CHAR LIMIT=80] NOTE: Same text as msgid="794424023757290105" 
          */
         public static final int cast_notification_connected_message=0x7f06000b;
@@ -1326,8 +1326,7 @@ containing a value of this type.
         public static final int create_calendar_message=0x7f060005;
         public static final int create_calendar_title=0x7f060004;
         public static final int decline=0x7f060003;
-        public static final int facebook_app_id=0x7f060041;
-        public static final int hello_world=0x7f06003f;
+        public static final int facebook_app_id=0x7f060040;
         public static final int messenger_send_button_text=0x7f06002c;
         public static final int store_picture_message=0x7f060001;
         public static final int store_picture_title=0x7f060000;

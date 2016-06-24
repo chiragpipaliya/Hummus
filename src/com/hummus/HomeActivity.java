@@ -94,7 +94,19 @@ public class HomeActivity extends Activity {
 		 callbackManager = CallbackManager.Factory.create();
 	        shareDialog = new com.facebook.share.widget.ShareDialog(this);
 	        
-
+	        PackageInfo pInfo;
+			try {
+				pInfo = getPackageManager().getPackageInfo(getPackageName(), 0);
+				String version = pInfo.versionName;
+				int verCode = pInfo.versionCode;
+				Log.e("TAG","version name: "+version);
+				Log.e("TAG","version code: "+verCode);
+				
+			} catch (NameNotFoundException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+	        
 		// iv_logo.setOnClickListener(new OnClickListener() {
 		//
 		// @Override
